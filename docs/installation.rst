@@ -5,7 +5,7 @@ via pipx
 --------
 
 :pypi:`virtualenv` is a CLI tool that needs a Python interpreter to run. If you already have a ``Python 3.7+``
-interpreter the best is to use :pypi:`pipx` to install virtualenv into an isolated environment. This has the added
+interpreter, the best is to use:pypi:`pipx` to install virtualenv into an isolated environment. This has the added
 benefit that later you'll be able to upgrade virtualenv without affecting other parts of the system.
 
 .. code-block:: console
@@ -16,7 +16,7 @@ benefit that later you'll be able to upgrade virtualenv without affecting other 
 via pip
 -------
 
-Alternatively you can install it within the global Python interpreter itself (perhaps as a user package via the
+Alternatively, you can install it within the global Python interpreter itself (perhaps as a user package via the
 ``--user`` flag). Be cautious if you are using a python install that is managed by your operating system or
 another package manager. ``pip`` might not coordinate with those tools, and may leave your system in an
 inconsistent state. Note, if you go down this path you need to ensure pip is new enough per the subsections below:
@@ -39,8 +39,8 @@ forwards the ``python-requires`` tag (notably the OpenStack mirrors don't do thi
 sdist
 ~~~~~
 When installing via a source distribution you need an installer that handles the
-`PEP-517 <https://www.python.org/dev/peps/pep-0517/>`_ specification. In case of ``pip`` this is version ``18.0.0`` or
-later (released on 2018 July). If you cannot upgrade your pip to support this you need to ensure that the build
+`PEP-517 <https://www.python.org/dev/peps/pep-0517/>`_ specification. In the case of ``pip`` this is version ``18.0.0`` or
+later (released on July 2018). If you cannot upgrade your pip to support this you need to ensure that the build
 requirements from `pyproject.toml <https://github.com/pypa/virtualenv/blob/main/pyproject.toml#L2>`_ are satisfied
 before triggering the install.
 
@@ -88,11 +88,11 @@ virtualenv works with the following Python interpreter implementations:
 - `PyPy <https://pypy.org/>`_: ``3.10 >= python_version >= 3.7``
 
 This means virtualenv works on the latest patch version of each of these minor versions. Previous patch versions are
-supported on a best effort approach.
+supported on a best-effort approach.
 
 CPython is shipped in multiple forms, and each OS repackages it, often applying some customization along the way.
-Therefore we cannot say universally that we support all platforms, but rather specify some we test against. In case
-of ones not specified here the support is unknown, though likely will work. If you find some cases please open a feature
+Therefore we cannot say universally that we support all platforms, but rather specify some we test against. In the case
+of ones not specified here, the support is unknown, though likely will work. If you find some cases please open a feature
 request on our issue tracker.
 
 Note:
@@ -111,7 +111,7 @@ Linux
 
 macOS
 ~~~~~
-In case of macOS we support:
+In the case of macOS, we support:
 
 - installations from `python.org <https://www.python.org/downloads/>`_,
 - python versions installed via `brew <https://docs.brew.sh/Homebrew-and-Python>`_,
